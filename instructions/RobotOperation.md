@@ -63,6 +63,9 @@ To execute a /RobMove action, the following parameters need to be defined:
 
 ```sh
 ros2 action send_goal -f /Robmove ros2srrc_data/action/Robmove "{type: '---', speed: 1.0, x: 0.0, y: 0.0, z: 0.0, qx: 0.0, qy: 0.0, qz: 0.0, qw: 0.0}"
+ros2 action send_goal -f /Robmove ros2srrc_data/action/Robmove "{type: 'PTP', speed: 1.0, x: 0.3, y: 0.2, z: 0.1, qx: 0.0, qy: 0.0, qz: 0.0, qw: 0.0}"
+
+
 ```
 
 It is recommended to combine /Robmove with /Robpose (ROS 2 Topic, see below). This ROS 2 topic publishes the current (real-time) pose of the Robot's end-effector, which helps the user to define the robot's next pose.

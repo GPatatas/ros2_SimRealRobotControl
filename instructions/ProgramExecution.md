@@ -20,6 +20,8 @@ To execute a program, use the following command:
 
 ```sh
 ros2 run ros2srrc_execution ExecuteProgram.py package:="PACKAGE_NAME" program:="PROGRAM_NAME"
+ros2 run ros2srrc_execution ExecuteProgram.py package:=ros2srrc_irb120 program:=irb120_demo
+
 ```
 
 - PACKAGE_NAME: The name of the ROS 2 Package where your program is located (inside the /programs folder).
