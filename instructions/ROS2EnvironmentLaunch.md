@@ -40,7 +40,8 @@ ros2 launch ros2srrc_launch moveit2.launch.py package:=ros2srrc_irb1200 config:=
 
 # UR3 Robot w/Robotiq Hand-E Gripper (bringup):
 ros2 launch ros2srrc_launch bringup.launch.py package:=ros2srrc_ur3 config:=ur3_3 robot_ip:=0.0.0.0
-ros2 launch ros2srrc_launch bringup_abb.launch.py package:=ros2srrc_irb120 config:=irb120_1 robot_ip:=192.168.125.1
+ros2 launch ros2srrc_launch bringup_abb.launch.py package:=ros2srrc_irb120 config:=irb120_1 robot_ip:=192.168.1.1
+gripper: 192.168.1.2
 ```
 
 ## Connecting to Real Robots in ros2_SimRealRobotControl
